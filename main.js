@@ -10,7 +10,7 @@ myButton.addEventListener('click', () =>{
     myProject = projectName.value.trim ();
     if(myProject === ''){
        Error.textContent = "Enter your project";
-       Error.style.color = "brown" 
+       Error.style.color = "black" 
        setTimeout( ()=>{
         Error.textContent = ''
        },1000)
@@ -55,8 +55,13 @@ function myLists(){
         element2.appendChild(element4)
         element5.appendChild(element2)
 
-        deleteButton.addEventListener('click', ()=>{
-            anotherArray.splice()
+        element4.addEventListener('click', ()=>{
+            let position = index;
+            if (position !== '') {
+                myArray.splice(position , 1);
+                localStorage.setItem('db', JSON.stringify(myArray))
+            }
+            myLists();
         })
 
     })
