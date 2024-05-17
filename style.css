@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aqua;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10%;
+    height: 100%;
+    flex-direction: column;
+    margin-bottom: 30px;
+    
+
+}
+.clickButtons{
+   display: flex;
+   justify-content: space-evenly;
+   gap: 20PX;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:solid;
+    width: 60%;
+   
+}
+.projectInput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.projectLists{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.input{
+    width: 80%;
+}
+.inputDiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    border: 1px solid color(grey);
+}
+.deleteButton{
+    width: 30%;
+    height: 100%;
+}
